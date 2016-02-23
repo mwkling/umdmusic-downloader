@@ -1,0 +1,5 @@
+Django==1.6.5
+# minimogrify==2.1.7
+requests==2.2.1
+# uWSGI==2.0.4
+django-config-url==0.1.1
