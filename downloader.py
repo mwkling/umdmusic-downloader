@@ -41,8 +41,8 @@ def main():
                                 # fix that lets us skip header rows
                                 if not past_first_cell:
                                     break
-                                f.write(cell.contents[0].string.strip() + "|")
-                                f.write(cell.contents[2].string.strip() + "|")
+                                f.write(cell.contents[0].string.encode('utf-8').strip() + "|")
+                                f.write(cell.contents[2].string.encode('utf-8').strip() + "|")
                     if past_first_cell:
                         f.write(chart_date + "\n")
 
